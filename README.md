@@ -1,6 +1,6 @@
 # Chia-CAT-Breakdown
 
-## Breakdown Chia CAT tokens to an address.
+## Breakdown Chia CAT tokens into smaller amounts (can be sent to any address).
 
 **Windows** - Place python script in C:\Users\username\.chia\mainnet\config
 

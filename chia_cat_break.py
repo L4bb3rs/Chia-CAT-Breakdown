@@ -53,12 +53,12 @@ def break_coin(address, wallet_id, spend_amount, fee, min_size):
                 0):
             spent = spend_cat(address, wallet_id, spend_amount, fee)
             print(f"\n{spent}")
-            if bool(spent["success"]) and spend_amount / 1000 > 0:
+            if bool(spent["success"]) and spend_amount > 0:
                 print(spend_amount)
                 spend_amount = int((((spend_amount / min_size) // 2) - 1) * min_size)
-                
+
             else:
-                
+
                 time.sleep(20)
         else:
             print("\nNo spendable balance")
